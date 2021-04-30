@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02 - literals and destructuring</title>
+</head>
+<body>
+    <a href="./index.html">Tornar</a>
+    <hr>
+    <h1>Destructuració d'Objectes</h1>
+<script>
+    const player = {
+        name: 'Lebron James',
+        club: 'LA Lakers',
+        address: {
+            city: 'Los Angeles'
+        }
+    };
+
+    // console.log(player.address.city);
+
+    //Per evitar escriure claus tant llargues fem servir la destructuració d'objectes
+
+    // DESTRUCTURANT...
+    const {name, club, address: {city} } = player;
+    console.log(name);
+    console.log(club);
+    console.log(`${name} plays for ${club} and lives in ${city}`);
+</script>
+</body>
+</html>

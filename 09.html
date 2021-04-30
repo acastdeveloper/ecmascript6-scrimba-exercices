@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>09 - spread operator</title>
+</head>
+<body>
+    <a href="./index.html">Tornar</a>
+    <hr>
+<script>
+    let contacts = ["Mary","Joel", "Danny"];
+
+    // let personalFriends = contacts;
+    /* Això és una referència al mateix espai de memòria */
+
+    // let personalFriends = [...contacts];
+    /* Quan fem servir l'Spread operator, en canvi, personalFriends és una nova matriu a un espai nou de memòria */
+
+    let personalFriends = ["David", ...contacts, "Lily"];
+
+    contacts.push("John");
+
+    console.log(personalFriends);
+
+    let person = {
+        name: "Adam",
+        age: 25,
+        city: "Manchester"
+    }
+
+    let employee = {
+        ...person,
+        salary:50000,
+        position: "Software Developer"
+    }
+
+    console.log(employee);
+
+
+</script>
+</body>
+</html>

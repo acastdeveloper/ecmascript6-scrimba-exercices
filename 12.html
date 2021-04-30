@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12 - Arrow Functions </title>
+</head>
+<body>
+    <a href="./index.html">Tornar</a>
+    <hr>
+<script>
+//function declaration
+function breakfastMenu() {
+    return "I'm going to scrambled eggs for breakfast";
+
+};
+
+// anonymous function
+const lunchMenu = function() {
+    return "I'm going to eat pizza for lunch";
+};
+
+// const dinnerMenu =  (food) => {
+//     return `I'm going to eat ${food}`;
+// }
+
+// const dinnerMenu =  (food) => `I'm going to eat ${food}`;
+
+
+const dinnerMenu =  food => `I'm going to eat ${food}`;
+
+
+
+console.log(dinnerMenu("chicken salad"));
+
+</script>
+</body>
+</html>
