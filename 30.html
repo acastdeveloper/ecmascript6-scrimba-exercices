@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>30 - Sets</title>
+</head>
+<body>
+    <a href="./index.html">Tornar</a>
+    <hr>
+<script>
+    const exampleSet = new Set([1,1,1,1,2,2,2,2]);
+    console.log(exampleSet);
+    console.log(exampleSet.size);
+
+    exampleSet.add(5);
+    console.log(exampleSet);
+    console.log(exampleSet.size);
+
+    console.log(exampleSet.delete(5));
+    console.log(exampleSet);
+    console.log(exampleSet.size);
+
+    console.log(exampleSet.has(5));
+
+    exampleSet.clear();
+    console.log(exampleSet.size);
+
+
+</script>
+</body>
+</html>

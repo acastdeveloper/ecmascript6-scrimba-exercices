@@ -1,0 +1,7 @@
+import {
+    data
+} from './test_export.js';
+
+let updatedData = data;
+updatedData.push(5);
+console.log(updatedData);

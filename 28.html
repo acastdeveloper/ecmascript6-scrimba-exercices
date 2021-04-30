@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>28 - Async & Await</title>
+</head>
+<body>
+    <a href="./index.html">Tornar</a>
+    <hr>
+
+<script>
+
+const photos = [];
+
+async function photoUpload() {
+    let uploadStatus = new Promise( (resolve, reject) => {
+        setTimeout( () => {
+            photos.push("Profile Pic");
+            resolve("Photo Uploaded")
+        }, 3000)
+    })
+
+    let result = await uploadStatus;
+
+    console.log(result);
+    console.log(photos.length);
+}
+
+photoUpload();
+
+
+</script>
+</body>
+</html>
